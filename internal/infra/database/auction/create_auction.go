@@ -66,7 +66,8 @@ func AuctionDeadLine() time.Duration {
 	interval := os.Getenv("DEADLINE")
 	duration, err := time.ParseDuration(interval)
 	if err != nil {
-		return time.Minute * 5
+		return time.Minute * 1
+		
 	}
 
 	return duration
